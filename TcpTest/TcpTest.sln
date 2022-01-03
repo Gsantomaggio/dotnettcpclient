@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpTest", "TcpTest\TcpTest.csproj", "{DFBBA960-37E7-4146-B373-C06E841546F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLib", "MyLib\MyLib.csproj", "{50E0B4E9-9656-4137-A680-DD3B4722C3C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{DFBBA960-37E7-4146-B373-C06E841546F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFBBA960-37E7-4146-B373-C06E841546F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFBBA960-37E7-4146-B373-C06E841546F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50E0B4E9-9656-4137-A680-DD3B4722C3C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E0B4E9-9656-4137-A680-DD3B4722C3C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E0B4E9-9656-4137-A680-DD3B4722C3C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E0B4E9-9656-4137-A680-DD3B4722C3C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -45,6 +45,8 @@ namespace TcpTest
         {
             while (true)
             {
+
+                TcpClient c;
                 if (!socket.Connected)
                 {
                     Console.WriteLine("Nope");
