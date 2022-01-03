@@ -27,10 +27,8 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 6.0.x
-    - name: Build
-      run: dotnet build --no-restore TcpTest
     - name: Test
-      run: dotnet test TcpTest
+      run: dotnet test TcpTest/MyLib
     # - name: Publish MyLib
     #   uses: brandedoutcast/publish-nuget@v2.5.2
     #   with:
