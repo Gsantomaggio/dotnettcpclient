@@ -1,0 +1,35 @@
+name: .NET
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    # runs-on: ubuntu-latest
+    # # services:
+    # #   rabbitmq:
+    # #     image: pivotalrabbitmq/rabbitmq-stream
+    # #     env:
+    # #       RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS: -rabbitmq_stream advertised_host localhost
+    # #     ports:
+    # #         - 5552:5552
+    # #         - 5672:5672
+    # #         - 15672:15672
+    # #         - 1883:1883
+    # #         - 61613:61613
+
+    steps:
+    # - uses: actions/checkout@v2
+    # - name: Setup .NET
+    #   uses: actions/setup-dotnet@v1
+    #   with:
+    #     dotnet-version: 6.0.x
+    # - name: Test
+    #   run: dotnet test TcpTest/MyLib
+    - name: Publish MyLib
+      uses: brandedoutcast/publish-nuget@v2.5.2
+      with:
+          PROJECT_FILE_PATH: TcpTest/MyLib/MyLibcsproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
